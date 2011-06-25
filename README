@@ -1,5 +1,13 @@
 Site com integração com iphones,smartphones, feito em Django com sistema integrado com facebook,orkut,twitter e pagseguro.
 inclusão de RSS. Jogos Educativos,Blogger e relatos de Professores.
 
+Python Version 2.7.1+
+Django Version 1.3.0
+
+instalar Python 2.7.1+
+Instalar Django 1.3.0
+criar diretorio 
+django-admin.py startproject cibereducacao
+
 Versão 0.0:
 - Criar base do projeto.
