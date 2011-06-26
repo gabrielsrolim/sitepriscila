@@ -9,5 +9,48 @@ Instalar Django 1.3.0
 criar diretorio 
 django-admin.py startproject cibereducacao
 
+Comandos frequentes:
+Para rodar o servidor local:
+- python manage.py runserver
+Habilitar o iterpretador interativo de python:
+- python manage.py shell
+
+Arquivos:
+ _init__.py: A file required for Python to treat the mysite directory as a package (a group of Python modules). (Don't Edit)
+ manage.py: A command-line utility that lets you interact with this Django project in various ways. (Don't Edit)
+ settings.py: Settings/configuration for this Django project.
+ urls.py: The URLs for this Django project.
+ views.py: how the name says. Is the view of the page with the functions that control the home page.
+
+MVC - (Model-View-Controler)
+
+
+MTV-(Model-Template-View)
+M-Modelo. O layout de acesso de dados. Esse layout tem tudo referente aos dados.
+T- Template. O layout de apresentação. Esse layout tem tudo referente ao que é colocado na tela.
+V- Visão. O layout da logica de negocio  
+
+Testar conexão com o banco (ver se as configurações aplicadas em settings.py estão certas)
+1 - execultar o comando python manage.py shell (para abrir o Ipython)
+2 - from django.db import connection
+3 - cursor = connection.cursor()
+
+Se não aparecer nenhuma mensagem de erro esta tudo ok.
+
+
+Criar uma nova Aplicação (ir a pasta do projeto e digitar)
+python manage.py startapp books
+
+Cria um novo diretorio chamado "books"
+com os arquivos
+__init__.py
+models.py
+tests.py
+views.py
+
+
+
+
+
 Versão 0.0:
 - Criar base do projeto.
