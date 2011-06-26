@@ -9,6 +9,31 @@ Instalar Django 1.3.0
 criar diretorio 
 django-admin.py startproject cibereducacao
 
+
+**********************************************************************
+Welcome to IPython. I will try to create a personal configuration directory
+where you can customize many aspects of IPython's functionality in:
+
+/home/gabriel/.ipython
+Initializing from configuration: /usr/lib/python2.7/dist-packages/IPython/UserConfig
+
+Successful installation!
+
+Please read the sections 'Initial Configuration' and 'Quick Tips' in the
+IPython manual (there are both HTML and PDF versions supplied with the
+distribution) to make sure that your system environment is properly configured
+to take advantage of IPython's features.
+
+Important note: the configuration system has changed! The old system is
+still in place, but its setting may be partly overridden by the settings in 
+"~/.ipython/ipy_user_conf.py" config file. Please take a look at the file 
+if some of the new settings bother you. 
+
+
+Please press <RETURN> to start IPython.
+**********************************************************************
+
+
 Comandos frequentes:
 Para rodar o servidor local:
 - python manage.py runserver
@@ -47,6 +72,23 @@ __init__.py
 models.py
 tests.py
 views.py
+
+Trabalhando Com models
+
+Validar as models digitar o comando:
+python manage.py validate
+
+Gerar CREAT_TABLE
+- python manage.py sqlall books
+
+Commitando o SQL para o banco:
+- python manage.py syncdb
+
+Entrando na shell do banco:
+- python manage.py dbshell
+
+Publisher.objects.create() #Cria o objeto diretamente no banco de dados.
+
 
 
 
