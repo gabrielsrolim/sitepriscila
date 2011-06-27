@@ -17,3 +17,12 @@ def hours_ahead(request,offset):
         raise Http404()
     next_time = datetime.datetime.now() + datetime.timedelta(hours=hour_offset)
     return render_to_response('hours_ahead.html',locals())
+
+def display_meta(request):
+    values = request.META.items()
+    values.sort()
+    html = []
+    for k, v in values:
+        html.append('<tr><td>%s</td><td>%s</td></tr>' % (k, v))
+    return HttpResponse('<table>%s</table>' % '\n'.join(html))
+
