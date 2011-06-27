@@ -5,36 +5,47 @@ body{}
 
 #top{background:#276171;width:900px;height:80px;border-radius: 0.5em;clear:both;}
 
-#left{width:150px;height:500px;float:left;}
+#top h1{color:#FFF;position:relative;float:right;left:80px;}
+
+#top h1.sombra{color:#000;position:relative;left:-125px;float:right;}
+
+#imgtop{position:relative;left:150px;}
+
+#left{width:150px;height:480px;float:left;}
+
+.selected{
+	color: #000;
+	text-decoration:none;
+}
 
 ul.nav { 
 	margin:0; 
-	padding:0;
+	padding:10px;
+	padding-bottom:70px;
+	padding-top:50px;
+	line-height:200%;
 	}
-	
+
 ul.nav li {
 	list-style:none;	
 	display:inline;
 	}
 ul.nav li a {
 	float:left;
-	border:1px solid #f00;
 	width:6.0em;
 	font:0.68em  Verdana, Arial, Helvetica, 
 	sans-serif;
-	background:#f1f1f1;
-	color:#333;
+	color:#3c0cc4;
 	text-align:center;
 	padding:0  0.2em 0.2em  0;
 	text-decoration:none;
 	}
 ul.nav a:hover{
-	background:#999;
-	color:#fff;
-	border-color:#00f;
+	text-decoration:none;
+	color:#276171;
 	}
 
-#right{width:150px;height:500px;float:right;}
+#right{width:150px;height:480px;float:right;}
 
 #right img{margin:0 auto;}
 
