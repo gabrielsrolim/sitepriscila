@@ -1,0 +1,16 @@
+html{}
+body{}
+
+#general{width:900px;margin:0 auto;}
+
+#top{background:#276171;width:900px;height:80px;border-radius: 0.5em;clear:both;}
+
+#left{width:150px;height:500px;border:1px solid #276171;float:left;}
+
+#right{width:150px;height:500px;border:1px solid #276171;float:right;}
+
+#right img{margin:0 auto;}
+
+#middle{width:594px;height:500px;border:1px solid pink;float:left;}
+
+#footer{background:#276171;width:900px;height:50px;border-radius: 0.5em;position:absolute;bottom:0;}
