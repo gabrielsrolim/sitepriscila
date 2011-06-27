@@ -33,7 +33,6 @@ if some of the new settings bother you.
 Please press <RETURN> to start IPython.
 **********************************************************************
 
-
 Comandos frequentes:
 Para rodar o servidor local:
 - python manage.py runserver
@@ -89,10 +88,50 @@ Entrando na shell do banco:
 
 Publisher.objects.create() #Cria o objeto diretamente no banco de dados.
 
+Comandos de models.
+
+Publisher.objects.filter(country="U.S.A",state_province="CA") (Filtra os campos como where country = "U.S.A" and state_province = "CA" )
+
+Publisher.objects.filter(name__contains="press") (__contais filtra os campos como where name like "%press%", existe o __icontains para case-insensitive)
 
 
+Habilitando a pagina de Administração:
+- discomente ou adicione em  MIDDLEWARE_CLASSES:
+'django.middleware.common.CommonMiddleware',
+'django.contrib.sessions.middleware.SessionMiddleware',
+'django.contrib.auth.middleware.AuthenticationMiddleware'
+
+- e em  INSTALLED_APPS
+'django.contrib.auth'
+
+Se for a primeira vez executar
+- python manage.py syncdb
+
+# Include these import statements...
+from django.contrib import admin
+admin.autodiscover()
+# And include this URLpattern...
+urlpatterns = patterns('',
+# ...
+(r'^admin/', include(admin.site.urls)),
+# ...
+)
+
+Para reconhecer a linguagem adicionar em MIDDLEWARE_CLASSES
+
+- 'django.middleware.locale.LocaleMiddleware'
+- Logo apos 'django.contrib.sessions.middleware.SessionMiddleware'
 
 
+variavel request
 
-Versão 0.0:
-- Criar base do projeto.
+atraves de linhas de comando com esta podemos obter varias informações.
+existe a request.META['HTTP_USER_AGENT']
+
+Problemas com erro "CSRF verification failed. Request aborted.(403)"
+- Adicionar em MIDDLEWARE_CLASSES 
+  'django.middleware.csrf.CsrfViewMiddleware',
+  'django.middleware.csrf.CsrfResponseMiddleware',
+
+referencias:
+- The definitive guide to django web development done right - second edition (2009)
