@@ -1,9 +1,10 @@
 html{font-family:calibri;}
-body{}
 
-#general{width:900px;margin:0 auto;}
+body{background-image: url("textura.png");}
 
-#top{background:#276171;width:900px;height:80px;border-radius: 0.5em;clear:both;}
+#general{width:900px;height:612px;margin:0 auto;background:#FFF;border-radius: 0.5em;}
+
+#top{background:#276171;width:900px;height:80px;border-radius: 0.5em;clear:both;top:0px;position:relative;}
 
 #top h1{color:#FFF;position:relative;float:right;left:80px;}
 
@@ -11,7 +12,7 @@ body{}
 
 #imgtop{position:relative;left:150px;}
 
-#left{width:150px;height:480px;float:left;}
+#left{width:150px;height:490px;float:left;background:#FFF;}
 
 .selected{
 	color: #000;
@@ -45,11 +46,11 @@ ul.nav a:hover{
 	color:#276171;
 	}
 
-#right{width:150px;height:480px;float:right;}
+#right{width:150px;height:490px;float:right;background:#FFF;}
 
 #right img{margin:0 auto;}
 
-#middle{width:594px;height:500px;float:left;}
+#middle{width:600px;height:500px;float:left;background:#FFF;}
 
 #middle1{width:594px;height:220px;float:left;}
 
