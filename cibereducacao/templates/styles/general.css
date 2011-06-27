@@ -54,6 +54,10 @@ ul.nav a:hover{
 
 #middle1{width:594px;height:220px;float:left;}
 
+#curso1{width:594px;height:150px;float:left;}
+
+.curso2{width:594px;height:105px;float:left;}
+
 #middle2{width:594px;height:110px;float:left;}
 
 #middle3{width:594px;height:110px;float:left;}
@@ -63,6 +67,19 @@ ul.nav a:hover{
 .text{text-align:right;font-style:italic;padding-right:10px;}
 
 .text2{text-align:left;font-style:italic;margin:10px; float:left;}
+
+.text3{text-align:left;font-style:italic;margin:10px;float:left;}
+
+#curso1 img{float:left;}
+
+#curso1 a:hover{
+	color:#000;
+}
+#imgpag{position:relative;left:140px;}
+
+#textrss{font-style:italic;float:right;text-align:right;}
+
+#rss{float:right;}
 
 #middle1 img{float:left;}
 
