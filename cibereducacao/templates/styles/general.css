@@ -15,12 +15,14 @@ width:900px; /*Width of main container*/
 margin: 0 auto; /*Center container on page*/
 background:#FFF;
 border-radius: 0.5em;
+-moz-border-radius:0.5em; -webkit-border-radius:0.5em;
 }
 
 #top{
 background:#276171;
 height: 80px; /*Height of top section*/
 border-radius: 0.5em;
+-moz-border-radius:0.5em; -webkit-border-radius:0.5em;
 }
 
 #top h1{
@@ -160,6 +162,7 @@ background:#276171;
 text-align: center;
 padding: 4px 0;
 border-radius: 0.5em;
+-moz-border-radius:0.5em; -webkit-border-radius:0.5em;
 }
 
 #footer p, a:hover{
