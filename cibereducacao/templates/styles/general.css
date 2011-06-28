@@ -6,6 +6,9 @@ margin:0;
 padding:0;
 
 }
+img{
+	border:0;
+}
 
 #general{
 width:900px; /*Width of main container*/
